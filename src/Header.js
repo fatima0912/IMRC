@@ -1,8 +1,10 @@
+import logo from './img/logo.png';
+
 function Header(){
     return <div> <nav class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="img/logo-full.png" width="100" height="30" alt=".."/>
+            <img src={logo} width="100" height="30" alt=".."/>
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
