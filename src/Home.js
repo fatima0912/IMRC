@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
-
+import bore3 from './img/bore3.jpg';
+import bore4 from './img/bore4.jpg';
+import borewell from './img/borewell.jpg';
 function Home() {
     return <div className='container'>
       <h2>carousel Example</h2>
@@ -11,13 +13,14 @@ function Home() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src='img/bore3.jpeg' width ="300px" alt=".."/>
+    <img src={bore3} className="d-block w-100" alt=".."/>
+      {/* <img src='bore3.jpg' width ="300px" alt=".."/> */}
      </div>
     <div className="carousel-item">
-      <img src='img/bore4.jpg' className="d-block w-100" alt=".."/>
+      <img src={bore4} className="d-block w-100" alt=".."/>
       </div>
     <div className="carousel-item">
-      <img src='img/borewell.jpg' className="d-block w-100" alt=".." />
+      <img src={borewell} className="d-block w-100" alt=".." />
      </div>
     </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
